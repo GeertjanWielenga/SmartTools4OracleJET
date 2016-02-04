@@ -180,15 +180,16 @@ public final class OracleJETVisualPanel extends JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         classNameTextField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         javaScriptFolderField = new javax.swing.JTextField();
-        browseButton = new javax.swing.JButton();
-        locationLabel = new javax.swing.JLabel();
+        browseJSButton = new javax.swing.JButton();
         locationComboBox = new javax.swing.JComboBox();
-
-        org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.jLabel1.text")); // NOI18N
+        jLabel4 = new javax.swing.JLabel();
+        javaScriptFolderField1 = new javax.swing.JTextField();
+        browseButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        locationLabel = new javax.swing.JLabel();
 
         classNameTextField.setText(org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.classNameTextField.text")); // NOI18N
 
@@ -202,12 +203,31 @@ public final class OracleJETVisualPanel extends JPanel {
             }
         });
 
-        org.openide.awt.Mnemonics.setLocalizedText(browseButton, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.browseButton.text")); // NOI18N
-        browseButton.addActionListener(new java.awt.event.ActionListener() {
+        org.openide.awt.Mnemonics.setLocalizedText(browseJSButton, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.browseJSButton.text")); // NOI18N
+        browseJSButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                browseButtonActionPerformed(evt);
+                browseJSButtonActionPerformed(evt);
             }
         });
+
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel4, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.jLabel4.text")); // NOI18N
+
+        javaScriptFolderField1.setText(org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.javaScriptFolderField1.text")); // NOI18N
+        javaScriptFolderField1.setEnabled(false);
+        javaScriptFolderField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                javaScriptFolderField1ActionPerformed(evt);
+            }
+        });
+
+        org.openide.awt.Mnemonics.setLocalizedText(browseButton1, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.browseButton1.text")); // NOI18N
+        browseButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                browseButton1ActionPerformed(evt);
+            }
+        });
+
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.jLabel1.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(locationLabel, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.locationLabel.text")); // NOI18N
 
@@ -217,41 +237,52 @@ public final class OracleJETVisualPanel extends JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(locationLabel, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(locationLabel)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(locationComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(classNameTextField)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(javaScriptFolderField, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(javaScriptFolderField1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(javaScriptFolderField, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(browseButton)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(browseJSButton)
+                            .addComponent(browseButton1)))
+                    .addComponent(classNameTextField)
+                    .addComponent(locationComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(26, 26, 26))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(classNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(classNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(locationLabel)
-                    .addComponent(locationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(locationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(locationLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(javaScriptFolderField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(browseButton))
-                .addContainerGap(91, Short.MAX_VALUE))
+                    .addComponent(browseJSButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(browseButton1)
+                        .addComponent(javaScriptFolderField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void browseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButtonActionPerformed
+    private void browseJSButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseJSButtonActionPerformed
         // Show the browse dialog
         SourceGroup group = getTargetGroup();
         FileObject fo = BrowseFolders.showDialog(new SourceGroup[]{group},
@@ -262,18 +293,29 @@ public final class OracleJETVisualPanel extends JPanel {
             String relPath = FileUtil.getRelativePath(group.getRootFolder(), fo);
             javaScriptFolderField.setText(relPath.replace('/', File.separatorChar)); // NOI18N
         }
-    }//GEN-LAST:event_browseButtonActionPerformed
+    }//GEN-LAST:event_browseJSButtonActionPerformed
 
     private void javaScriptFolderFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_javaScriptFolderFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_javaScriptFolderFieldActionPerformed
 
+    private void javaScriptFolderField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_javaScriptFolderField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_javaScriptFolderField1ActionPerformed
+
+    private void browseButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_browseButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton browseButton;
+    private javax.swing.JButton browseButton1;
+    private javax.swing.JButton browseJSButton;
     private javax.swing.JTextField classNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField javaScriptFolderField;
+    private javax.swing.JTextField javaScriptFolderField1;
     private javax.swing.JComboBox locationComboBox;
     private javax.swing.JLabel locationLabel;
     // End of variables declaration//GEN-END:variables
