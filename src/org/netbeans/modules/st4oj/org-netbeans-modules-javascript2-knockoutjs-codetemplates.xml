@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC  "-//NetBeans//DTD Editor Code Templates settings 1.0//EN"
+                                "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+
+<codetemplates>
+
+    <codetemplate abbreviation="vm">
+        <code>
+<![CDATA[function RootViewModel() {
+}
+$(document).ready(
+        function ()
+        {
+            ko.applyBindings(new RootViewModel());
+        }
+);
+]]>
+        </code>
+    </codetemplate>
+</codetemplates>
