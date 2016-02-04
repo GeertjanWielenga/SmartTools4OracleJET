@@ -89,6 +89,9 @@ public final class OracleJETWizardIterator implements WizardDescriptor.Instantia
         DataFolder targetFolderName = DataFolder.findFolder(dir);
         
         FileObject htmlDir = targetFolderName.getPrimaryFile().getParent().getFileObject("views");
+        if (htmlDir==null){
+            htmlDir = targetFolderName.getPrimaryFile().getParent().createFolder("views");
+        }
         DataFolder targetHtmlFolderName = DataFolder.findFolder(htmlDir);
 
         //Get the template and convert it:
