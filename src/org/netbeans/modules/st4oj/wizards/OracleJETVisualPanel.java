@@ -185,9 +185,6 @@ public final class OracleJETVisualPanel extends JPanel {
         javaScriptFolderField = new javax.swing.JTextField();
         browseJSButton = new javax.swing.JButton();
         locationComboBox = new javax.swing.JComboBox();
-        jLabel4 = new javax.swing.JLabel();
-        javaScriptFolderField1 = new javax.swing.JTextField();
-        browseButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         locationLabel = new javax.swing.JLabel();
 
@@ -210,23 +207,6 @@ public final class OracleJETVisualPanel extends JPanel {
             }
         });
 
-        org.openide.awt.Mnemonics.setLocalizedText(jLabel4, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.jLabel4.text")); // NOI18N
-
-        javaScriptFolderField1.setText(org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.javaScriptFolderField1.text")); // NOI18N
-        javaScriptFolderField1.setEnabled(false);
-        javaScriptFolderField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                javaScriptFolderField1ActionPerformed(evt);
-            }
-        });
-
-        org.openide.awt.Mnemonics.setLocalizedText(browseButton1, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.browseButton1.text")); // NOI18N
-        browseButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                browseButton1ActionPerformed(evt);
-            }
-        });
-
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.jLabel1.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(locationLabel, org.openide.util.NbBundle.getMessage(OracleJETVisualPanel.class, "OracleJETVisualPanel.locationLabel.text")); // NOI18N
@@ -240,18 +220,13 @@ public final class OracleJETVisualPanel extends JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(locationLabel)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel3))
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(javaScriptFolderField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(javaScriptFolderField, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
+                        .addComponent(javaScriptFolderField, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(browseJSButton)
-                            .addComponent(browseButton1)))
+                        .addComponent(browseJSButton))
                     .addComponent(classNameTextField)
                     .addComponent(locationComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(26, 26, 26))
@@ -272,13 +247,7 @@ public final class OracleJETVisualPanel extends JPanel {
                     .addComponent(jLabel3)
                     .addComponent(javaScriptFolderField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(browseJSButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(browseButton1)
-                        .addComponent(javaScriptFolderField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -299,23 +268,12 @@ public final class OracleJETVisualPanel extends JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_javaScriptFolderFieldActionPerformed
 
-    private void javaScriptFolderField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_javaScriptFolderField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_javaScriptFolderField1ActionPerformed
-
-    private void browseButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_browseButton1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton browseButton1;
     private javax.swing.JButton browseJSButton;
     private javax.swing.JTextField classNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField javaScriptFolderField;
-    private javax.swing.JTextField javaScriptFolderField1;
     private javax.swing.JComboBox locationComboBox;
     private javax.swing.JLabel locationLabel;
     // End of variables declaration//GEN-END:variables

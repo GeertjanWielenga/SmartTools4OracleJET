@@ -1,6 +1,7 @@
 package org.netbeans.modules.st4oj.wizards;
 
 import java.awt.Component;
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import javax.swing.JComponent;
@@ -20,19 +21,19 @@ import org.openide.loaders.DataObject;
 
 @TemplateRegistrations({
     @TemplateRegistration(
-        folder = "ClientSide",
-        displayName = "#OracleJETWizardIterator_displayName",
-        iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
-        description = "JETModule.html",
-        content = "../resources/home.js",
-        position = 0,
-        scriptEngine = "freemarker"),
+            folder = "ClientSide",
+            displayName = "#OracleJETWizardIterator_displayName",
+            iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
+            description = "JETModule.html",
+            content = "../resources/home.js",
+            position = 0,
+            scriptEngine = "freemarker"),
     @TemplateRegistration(
-        folder = "ClientSide",
-        content = "../resources/home.html",
-        position = 10,
-        category = "hidden",
-        scriptEngine = "freemarker")
+            folder = "ClientSide",
+            content = "../resources/home.html",
+            position = 10,
+            category = "hidden",
+            scriptEngine = "freemarker")
 })
 public final class OracleJETWizardIterator implements WizardDescriptor.InstantiatingIterator<WizardDescriptor> {
 
@@ -87,13 +88,16 @@ public final class OracleJETWizardIterator implements WizardDescriptor.Instantia
         //Get the source folder
         FileObject dir = Templates.getTargetFolder(wizard);
         DataFolder targetFolderName = DataFolder.findFolder(dir);
+        
+        FileObject htmlDir = targetFolderName.getPrimaryFile().getParent().getFileObject("views");
+        DataFolder targetHtmlFolderName = DataFolder.findFolder(htmlDir);
 
         //Get the template and convert it:
         FileObject sourceTemplate = Templates.getTemplate(wizard);
         FileObject headerTemplate = FileUtil.findBrother(sourceTemplate, "html"); // NOI18N
         if (headerTemplate != null) {
             DataObject dobjHeader = DataObject.find(headerTemplate);
-            files.add(dobjHeader.createFromTemplate(targetFolderName, className, args));
+            files.add(dobjHeader.createFromTemplate(targetHtmlFolderName, className, args));
         }
 
         DataObject dobjSource = DataObject.find(sourceTemplate);
