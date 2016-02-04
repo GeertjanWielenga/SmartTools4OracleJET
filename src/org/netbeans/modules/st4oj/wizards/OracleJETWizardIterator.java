@@ -1,7 +1,6 @@
 package org.netbeans.modules.st4oj.wizards;
 
 import java.awt.Component;
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import javax.swing.JComponent;
