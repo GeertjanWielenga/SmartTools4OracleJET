@@ -9,7 +9,7 @@
         <div class="oj-col demo-appheader-col">
             <div class="oj-row">
                 <div>
-                    <div id="ojAppNav2" class="demo-appheader-nav oj-lg-condense oj-lg-justify-content-center oj-xl-condense oj-xl-justify-content-flex-end" 
+                    <div id="ojAppNav" class="demo-appheader-nav oj-lg-condense oj-lg-justify-content-center oj-xl-condense oj-xl-justify-content-flex-end" 
                          data-bind="ojComponent: {
                              component: 'ojNavigationList', 
                                   drillMode: 'none', 
