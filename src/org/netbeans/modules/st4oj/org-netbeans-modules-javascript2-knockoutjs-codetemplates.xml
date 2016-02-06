@@ -59,4 +59,30 @@ self.dataSource = new oj.ArrayTableDataSource(appNavData, {idAttribute: 'id'});
 ]]>
         </code>
     </codetemplate>
+    <codetemplate abbreviation="ojoffcanvas">
+        <code>
+<![CDATA[          self.offScreenButtonIconClass = "oj-fwk-icon oj-fwk-icon-hamburger";
+        self.appDrawer =
+                {
+                    "edge": "start",
+                    "displayMode": "push",
+                    "selector": "#appDrawer",
+                    "selection": "selectedItem"
+                };
+        self.toggleAppDrawer = function ()
+        {
+            return oj.OffcanvasUtils.toggle(self.appDrawer);
+        };
+         //
+        // Close off-screen content once window becomes larger.
+        //
+        var query = window.matchMedia("(min-width: 39.375rem)");
+        var mqListener = function (event)
+        {
+            oj.OffcanvasUtils.close(self.appDrawer);
+        };
+        query.addListener(mqListener);
+]]>
+        </code>
+    </codetemplate>
 </codetemplates>
