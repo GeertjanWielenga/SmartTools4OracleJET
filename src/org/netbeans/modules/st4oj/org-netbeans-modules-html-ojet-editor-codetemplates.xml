@@ -4,9 +4,12 @@
 
 <codetemplates>
     <codetemplate abbreviation="home"><code><![CDATA[<div data-bind="ojModule: { name: 'home'}"></div>]]></code></codetemplate>
+    <codetemplate abbreviation="about"><code><![CDATA[<div data-bind="ojModule: { name: 'about'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="main"><code><![CDATA[<div data-bind="ojModule: { name: 'main'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="header"><code><![CDATA[<div data-bind="ojModule: { name: 'header'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="footer"><code><![CDATA[<div data-bind="ojModule: { name: 'footer'}"></div>]]></code></codetemplate>
+    <codetemplate abbreviation="selection"><code><![CDATA[selection: $root.router.stateId(),]]></code></codetemplate>
+    <codetemplate abbreviation="optionChange"><code><![CDATA[optionChange: $root.optionChangeHandler,]]></code></codetemplate>
     <codetemplate abbreviation="ojnavigationlist" xml:space="preserve">
         <code><![CDATA[//'ojs/ojnavigationlist', 'ojs/ojdatacollection-common'        
 var appNavData = [

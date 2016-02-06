@@ -17,4 +17,32 @@ $(document).ready(
 ]]>
         </code>
     </codetemplate>
+    <codetemplate abbreviation="ro">
+        <code>
+<![CDATA[          var router = oj.Router.rootInstance;
+            router.configure({
+                'home': {label: 'Home', isDefault: true},
+                'about': {label: 'About'}
+            });
+
+            function RootViewModel() {
+                var self = this;
+                self.router = router;
+                self.optionChangeHandler = function (event, data) {
+                    if (data.value === undefined) {
+                        data.value = 'about';
+                    }
+                    if ('ojAppNav' === event.target.id && event.originalEvent) {
+                        self.router.go(data.value);
+                    }
+                };
+            }
+            oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
+            oj.Router.sync().then(
+                    function () {
+                        ko.applyBindings(new RootViewModel());
+                    });
+]]>
+        </code>
+    </codetemplate>
 </codetemplates>
