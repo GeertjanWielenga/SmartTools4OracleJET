@@ -10,18 +10,4 @@
     <codetemplate abbreviation="footer"><code><![CDATA[<div data-bind="ojModule: { name: 'footer'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="selection"><code><![CDATA[selection: $root.router.stateId(),]]></code></codetemplate>
     <codetemplate abbreviation="optionChange"><code><![CDATA[optionChange: $root.optionChangeHandler,]]></code></codetemplate>
-    <codetemplate abbreviation="ojnavigationlist" xml:space="preserve">
-        <code><![CDATA[//'ojs/ojnavigationlist', 'ojs/ojdatacollection-common'        
-var appNavData = [
-    {
-        name: 'Home',
-        id: 'home'
-    },
-    {
-        name: 'About',
-        id: 'about'
-    }];
-self.dataSource = new oj.ArrayTableDataSource(appNavData, {idAttribute: 'id'});
-]]></code>
-    </codetemplate>
 </codetemplates>
