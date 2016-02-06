@@ -10,6 +10,15 @@
             <file name="ojLayout.xml" url="palette/ojLayout.xml"> 
                 <attr name="position" intvalue="20"/> 
             </file> 
+            <file name="toggleappdrawer.xml" url="palette/toggleappdrawer.xml"> 
+                <attr name="position" intvalue="30"/> 
+            </file> 
+            <file name="offcanvas.xml" url="palette/offcanvas.xml"> 
+                <attr name="position" intvalue="40"/> 
+            </file> 
+            <file name="offcanvastemplate.xml" url="palette/offcanvastemplate.xml"> 
+                <attr name="position" intvalue="50"/> 
+            </file> 
         </folder> 
     </folder>
     <folder name="Editors">

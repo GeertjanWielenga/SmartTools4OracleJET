@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC "-//NetBeans//Editor Palette Item 1.1//EN" "http://www.netbeans.org/dtds/editor-palette-item-1_1.dtd">
+
+<editor_palette_item version="1.0">
+    <body>
+        <![CDATA[
+                    <div class="demo-off-canvas-toggle demo-appheader-toggle-button">
+                        <button class='oj-button-half-chrome demo-appheader-toggle-button'
+                                data-bind="click:toggleAppDrawer,
+			     ojComponent: {component:'ojButton', 
+                                    display: 'icons', 
+                                    icons: {start: offScreenButtonIconClass}} ">
+                        </button>
+                    </div>
+        ]]>
+    </body>
+    <icon16 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <icon32 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <inline-description>
+        <display-name>toggleappdrawer</display-name>
+        <tooltip>toggleappdrawer</tooltip>
+    </inline-description>
+</editor_palette_item>

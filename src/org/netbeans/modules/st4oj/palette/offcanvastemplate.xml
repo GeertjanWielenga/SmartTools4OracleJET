@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC "-//NetBeans//Editor Palette Item 1.1//EN" "http://www.netbeans.org/dtds/editor-palette-item-1_1.dtd">
+
+<editor_palette_item version="1.0">
+    <body>
+        <![CDATA[
+<div id="ojAppNav" 
+     data-bind="ojComponent: {component: 'ojNavigationList', 
+        drillMode: 'collapsible', 
+        data: $data.dataSource,
+        optionChange: $parent.optionChangeHandler,
+        item: { template: 'app_nav_template' }
+        }" 
+     >
+</div>
+        ]]>
+    </body>
+    <icon16 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <icon32 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <inline-description>
+        <display-name>offcanvastemplate</display-name>
+        <tooltip>offcanvastemplate</tooltip>
+    </inline-description>
+</editor_palette_item>
