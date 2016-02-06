@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC "-//NetBeans//Editor Palette Item 1.1//EN" "http://www.netbeans.org/dtds/editor-palette-item-1_1.dtd">
+
+<editor_palette_item version="1.0">
+    <body>
+        <![CDATA[
+        <div class="oj-row">
+            <div class="oj-xl-3 oj-lg-3 oj-sm-12 oj-col">
+                <div role="navigation" class="demo-page-content-area">
+                    <div id="navigationContent" data-bind="ojModule: { viewName: 'navContent'}"></div>
+                </div>
+            </div>
+            <div class="oj-xl-6 oj-lg-9 oj-sm-12 oj-col"> 
+                <div role="main" class="demo-page-content-area">
+                    <div id="mainContent" data-bind="ojModule: { name: router.stateId()}"></div>
+                </div>
+            </div>
+            <div class="oj-xl-3 oj-sm-12 oj-col"> 
+                <div role="complementary" class="demo-page-content-area">
+                    <div id="complementaryContent" data-bind="ojModule: { viewName: 'compContent'}"></div>
+                </div>
+            </div>
+        </div>
+        ]]>
+    </body>
+    <icon16 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <icon32 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <inline-description>
+        <display-name>ojLayout</display-name>
+        <tooltip>ojLayout</tooltip>
+    </inline-description>
+</editor_palette_item>

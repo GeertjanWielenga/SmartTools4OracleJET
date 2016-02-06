@@ -7,6 +7,9 @@
             <file name="ojNavigationList.xml" url="palette/ojNavigationList.xml"> 
                 <attr name="position" intvalue="10"/> 
             </file> 
+            <file name="ojLayout.xml" url="palette/ojLayout.xml"> 
+                <attr name="position" intvalue="20"/> 
+            </file> 
         </folder> 
     </folder>
     <folder name="Editors">
