@@ -10,4 +10,5 @@
     <codetemplate abbreviation="footer"><code><![CDATA[<div data-bind="ojModule: { name: 'footer'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="selection"><code><![CDATA[selection: $root.router.stateId(),]]></code></codetemplate>
     <codetemplate abbreviation="optionChange"><code><![CDATA[optionChange: $root.optionChangeHandler,]]></code></codetemplate>
+    <codetemplate abbreviation="favicon"><code><![CDATA[<link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />]]></code></codetemplate>
 </codetemplates>
