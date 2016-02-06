@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC "-//NetBeans//Editor Palette Item 1.1//EN" "http://www.netbeans.org/dtds/editor-palette-item-1_1.dtd">
+
+<editor_palette_item version="1.0">
+    <body>
+        <![CDATA[
+<div class="demo-appheader">
+    <div class="oj-row demo-appheader-classic">
+        <div class="oj-col demo-appheader-col">
+            <div class="oj-row">
+                <div>
+                    <div id="ojAppNav2" class="demo-appheader-nav oj-lg-condense oj-lg-justify-content-center oj-xl-condense oj-xl-justify-content-flex-end" 
+                         data-bind="ojComponent: {
+                             component: 'ojNavigationList', 
+                                  drillMode: 'none', 
+                                  edge: 'top', 
+                                  data: dataSource,
+                                  item: { template: 'app_nav_template' }
+                                  }">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="app_nav_template">
+    <li>
+        <a href="#">
+            <!-- ko text: $data['name'] --> <!--/ko-->
+        </a>
+    </li>    
+</script>
+        ]]>
+    </body>
+    <icon16 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <icon32 urlvalue="org/netbeans/modules/st4oj/resources/ojet-icon.png" />
+    <inline-description>
+        <display-name>ojNavigationList</display-name>
+        <tooltip>ojNavigationList</tooltip>
+    </inline-description>
+</editor_palette_item>

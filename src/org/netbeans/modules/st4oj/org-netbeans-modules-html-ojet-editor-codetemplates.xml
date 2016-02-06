@@ -7,4 +7,18 @@
     <codetemplate abbreviation="main"><code><![CDATA[<div data-bind="ojModule: { name: 'main'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="header"><code><![CDATA[<div data-bind="ojModule: { name: 'header'}"></div>]]></code></codetemplate>
     <codetemplate abbreviation="footer"><code><![CDATA[<div data-bind="ojModule: { name: 'footer'}"></div>]]></code></codetemplate>
+    <codetemplate abbreviation="ojnavigationlist" xml:space="preserve">
+        <code><![CDATA[//'ojs/ojnavigationlist', 'ojs/ojdatacollection-common'        
+var appNavData = [
+    {
+        name: 'Home',
+        id: 'home'
+    },
+    {
+        name: 'About',
+        id: 'people'
+    }];
+self.dataSource = new oj.ArrayTableDataSource(appNavData, {idAttribute: 'id'});
+]]></code>
+    </codetemplate>
 </codetemplates>
