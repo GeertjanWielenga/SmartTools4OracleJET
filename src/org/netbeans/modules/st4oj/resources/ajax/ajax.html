@@ -1,0 +1,11 @@
+<h1>${name}</h1>
+<!-- http://www.w3schools.com/xml/cd_catalog.xml -->
+<table
+       data-bind="ojComponent: {component: 'ojTable',
+            data: datasource,
+            columns: [
+                {headerText: 'Id',field: 'id'},
+                {headerText: 'Artist', field: 'artist'},
+                {headerText: 'Title', field: 'title'}
+            ]}">
+</table>

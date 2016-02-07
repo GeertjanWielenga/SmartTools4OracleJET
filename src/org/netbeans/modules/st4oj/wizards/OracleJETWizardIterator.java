@@ -39,12 +39,31 @@ import org.openide.loaders.DataObject;
             iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
             description = "JETModule.html",
             content = "../resources/table/table.js",
-            position = 12,
+            position = 15,
             scriptEngine = "freemarker"),
     @TemplateRegistration(
             folder = "ClientSide",
             content = "../resources/table/table.html",
-            position = 15,
+            position = 20,
+            category = "hidden",
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            displayName = "#OracleJETWizardIterator_ajax_displayName",
+            iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
+            description = "JETModule.html",
+            content = "../resources/ajax/ajax.js",
+            position = 25,
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            content = "../resources/ajax/cd_catalog.xml",
+            position = 55,
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            content = "../resources/ajax/ajax.html",
+            position = 30,
             category = "hidden",
             scriptEngine = "freemarker"),
     @TemplateRegistration(
@@ -53,12 +72,12 @@ import org.openide.loaders.DataObject;
             iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
             description = "JETModule.html",
             content = "../resources/kohelloworld/home.js",
-            position = 20,
+            position = 35,
             scriptEngine = "freemarker"),
     @TemplateRegistration(
             folder = "ClientSide",
             content = "../resources/kohelloworld/home.html",
-            position = 30,
+            position = 40,
             category = "hidden",
             scriptEngine = "freemarker")
 })
