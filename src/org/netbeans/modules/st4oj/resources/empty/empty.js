@@ -1,14 +1,15 @@
 /**
- * Home module
+ * ${name} module
  */
 define(['ojs/ojcore', 'knockout'
 ], function (oj, ko) {
     /**
      * The view model for the main content view template
      */
-    function homeContentViewModel() {
+    function ${name}ContentViewModel() {
         var self = this;
     }
 
-    return homeContentViewModel;
+    return ${name}ContentViewModel;
 });
+

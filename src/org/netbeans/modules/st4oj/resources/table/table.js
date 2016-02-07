@@ -1,12 +1,12 @@
 /**
- * Table module
+ * ${name} module
  */
 define(['ojs/ojcore', 'knockout', 'ojs/ojtable'
 ], function (oj, ko) {
     /**
      * The view model for the main content view template
      */
-    function homeContentViewModel() {
+    function ${name}ContentViewModel() {
         var self = this;
         var deptArray = [{DepartmentId: 1001, DepartmentName: 'ADFPM 1001 neverending', LocationId: 200, ManagerId: 300},
             {DepartmentId: 556, DepartmentName: 'BB', LocationId: 200, ManagerId: 300},
@@ -26,5 +26,5 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojtable'
         self.datasource = new oj.ArrayTableDataSource(deptArray, {idAttribute: 'DepartmentId'});
     }
 
-    return homeContentViewModel;
+    return ${name}ContentViewModel;
 });

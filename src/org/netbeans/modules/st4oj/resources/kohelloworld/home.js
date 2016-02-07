@@ -1,12 +1,12 @@
 /**
- * Home module
+ * ${name} module
  */
 define(['ojs/ojcore', 'knockout'
 ], function (oj, ko) {
     /**
      * The view model for the main content view template
      */
-    function homeContentViewModel() {
+    function ${name}ContentViewModel() {
         var self = this;
         self.firstName = ko.observable("Planet");
         self.lastName = ko.observable("Earth");
@@ -15,5 +15,5 @@ define(['ojs/ojcore', 'knockout'
         }, this);
     }
 
-    return homeContentViewModel;
+    return ${name}ContentViewModel;
 });
