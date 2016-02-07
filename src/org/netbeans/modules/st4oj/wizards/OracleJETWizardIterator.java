@@ -35,6 +35,20 @@ import org.openide.loaders.DataObject;
             scriptEngine = "freemarker"),
     @TemplateRegistration(
             folder = "ClientSide",
+            displayName = "#OracleJETWizardIterator_table_displayName",
+            iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
+            description = "JETModule.html",
+            content = "../resources/table/table.js",
+            position = 12,
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            content = "../resources/table/table.html",
+            position = 15,
+            category = "hidden",
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
             displayName = "#OracleJETWizardIterator_kohelloworld_displayName",
             iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
             description = "JETModule.html",
