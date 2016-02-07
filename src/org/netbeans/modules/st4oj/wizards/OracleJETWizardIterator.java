@@ -21,16 +21,30 @@ import org.openide.loaders.DataObject;
 @TemplateRegistrations({
     @TemplateRegistration(
             folder = "ClientSide",
-            displayName = "#OracleJETWizardIterator_displayName",
+            displayName = "#OracleJETWizardIterator_empty_displayName",
             iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
             description = "JETModule.html",
-            content = "../resources/home.js",
+            content = "../resources/empty/empty.js",
             position = 0,
             scriptEngine = "freemarker"),
     @TemplateRegistration(
             folder = "ClientSide",
-            content = "../resources/home.html",
+            content = "../resources/empty/empty.html",
             position = 10,
+            category = "hidden",
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            displayName = "#OracleJETWizardIterator_kohelloworld_displayName",
+            iconBase = "org/netbeans/modules/st4oj/resources/ojet-icon.png",
+            description = "JETModule.html",
+            content = "../resources/kohelloworld/home.js",
+            position = 20,
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "ClientSide",
+            content = "../resources/kohelloworld/home.html",
+            position = 30,
             category = "hidden",
             scriptEngine = "freemarker")
 })
@@ -87,9 +101,9 @@ public final class OracleJETWizardIterator implements WizardDescriptor.Instantia
         //Get the source folder
         FileObject dir = Templates.getTargetFolder(wizard);
         DataFolder targetFolderName = DataFolder.findFolder(dir);
-        
+
         FileObject htmlDir = targetFolderName.getPrimaryFile().getParent().getFileObject("views");
-        if (htmlDir==null){
+        if (htmlDir == null) {
             htmlDir = targetFolderName.getPrimaryFile().getParent().createFolder("views");
         }
         DataFolder targetHtmlFolderName = DataFolder.findFolder(htmlDir);
