@@ -59,6 +59,11 @@ self.dataSource = new oj.ArrayTableDataSource(appNavData, {idAttribute: 'id'});
 ]]>
         </code>
     </codetemplate>
+    <codetemplate abbreviation="andreas">
+        <code>
+<![CDATA[koop]]>
+        </code>
+    </codetemplate>
     <codetemplate abbreviation="ojoffcanvas">
         <code>
 <![CDATA[          self.offScreenButtonIconClass = "oj-fwk-icon oj-fwk-icon-hamburger";
